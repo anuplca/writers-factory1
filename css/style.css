@@ -1,0 +1,242 @@
+body{ font-family: 'Lato', sans-serif; padding:0; margin:0;  }
+a, a:focus, a:hover{ text-decoration:none; outline:none; }
+ul, li{ padding:0; margin:0; list-style:none; }
+
+@font-face {
+    font-family: 'Georgia';
+    src: url('../fonts/Georgia-Bold.woff2') format('woff2'),
+        url('../fonts/Georgia-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/*==== Header Start ====*/
+.navbar-default{ padding:15px 0 10px; margin:0; }
+.navbar-default .logo{ width:95px; padding:0; margin:0; }
+.navbar-default .logo a{ display:block; }
+.navbar-default .logo a img{ width:100%; height:auto; }
+.navbar-default .rt-side{ display:flex; flex-wrap:wrap; align-content:center; padding:0; margin:0; }
+.navbar-default .rt-side .notification{ padding:0 25px 0 0; margin:0; }
+.navbar-default .rt-side .notification a{ width:30px; height:30px; line-height:30px; display:inline-block; background:#333333; border-radius:50%; text-align:center; font-size:15px; color:#fb9a17; position:relative; }
+.navbar-default .rt-side .notification a span.number{ position:absolute; right:-7px; top:-5px; width:17px; height:17px; line-height:17px; display:inline-block; background:#fe5f59; border-radius:50%; text-align:center; font-size:12px; color:#fff; font-weight:400; }
+.navbar-default .rt-side .navigation{ padding:0; margin:0; }
+.navbar-default .rt-side .navigation ul li{ font-size:14px; line-height:16px; font-weight:400; display:inline-block; padding:0 25px 0 0; margin:0; }
+.navbar-default .rt-side .navigation ul li a{ color:#393939; transition:all 0.6s; }
+.navbar-default .rt-side .navigation ul li a:hover{ color:#fe5f59; }
+.navbar-default .rt-side .logout{ padding:0; margin:0; }
+.navbar-default .rt-side .logout a{ font-size:14px; line-height:16px; font-weight:400; color:#393939; transition:all 0.6s; padding:0; margin:0; }
+.navbar-default .rt-side .logout a i{ padding-left:5px; }
+.navbar-default .rt-side .logout a:hover{ color:#fe5f59; }
+
+
+/*== Sidebar Start ==*/
+.sidebar{ position:fixed; top:100px; left:20px; width:85px; height:500px; background-color:#fff; border-radius:20px; overflow:hidden; box-shadow:0 0 10px 0 rgba(0,0,0,0.2); margin:0; padding:0; }
+.sidebar .logo-block{ text-align:center; margin:0; padding:0 0 28px; }
+.sidebar .logo-block a{ display:block; background:#f9f9f9; padding:10px; }
+.sidebar .logo-block a img{ max-width:100%; }
+.sidebar ul li{ display:block; padding:0 0 8px; text-align:center; }
+.sidebar ul li a{ display:inline-block; transition:all 0.5s; width:58px; height:58px; line-height:58px; border-radius:12px; }
+.sidebar ul li a img{ max-width:100%; }
+.sidebar ul li a.active{ box-shadow:0 0 7px 0 rgba(0,0,0,0.2); }
+.sidebar ul li a:hover{ box-shadow:0 0 7px 0 rgba(0,0,0,0.2); }
+
+
+/*== Signup-form Start ==*/
+.signup-form{ margin:0; padding:0; }
+.signup-form .row-1{ background:#343534; border-radius:25px; overflow:hidden; margin:0; padding:40px 60px 0; }
+.signup-form .text-panel h2{ position:relative; font-size:36px; line-height:42px; font-weight:700; color:#fff; padding:0; margin:0 0 62px; }
+.signup-form .text-panel h2:after{ position:absolute; bottom:-25px; left:0; content:""; width:50px; height:4px; background:#fa9917; }
+.signup-form .text-panel p{ font-size:21px; line-height:23px; font-weight:400; color:#fff; letter-spacing:-.37px; padding:0; margin:0; }
+.signup-form .img-panel{ position:relative; top:40px; right:40px; width:383px; margin:0; padding:0; }
+.signup-form .img-panel img{ width:100%; }
+.signup-form .form-panel{ background:#fff; border-radius:20px 20px 0 0; margin:0; padding:45px 80px; }
+.signup-form .form-panel h3{ font-size:30px; line-height:32px; font-weight:700; color:#000; letter-spacing:-.46px; padding:0 0 52px; margin:0; }
+.signup-form label{ font-size:14px; line-height:16px; font-weight:700; color:#4A4A4A; margin:0; padding:0 0 12px; }
+.signup-form .form-group{ position:relative; margin:0 0 18px; padding:0; }
+.signup-form .form-group{ margin:0 0 18px; padding:0; }
+.signup-form .form-group .form-control{ font-size:14px; line-height:16px; font-weight:400; color:#000; border:1px solid rgba(0,0,0,0.2); outline:none; box-shadow:none; background:none; border-radius:5px; height:40px; margin:0; padding:0 0 0 18px; }
+.signup-form .form-group .form-control::placeholder { color:rgba(0,0,0,0.4);  }
+.signup-form .form-group .form-control:-ms-input-placeholder {  color:rgba(0,0,0,0.4); }
+.signup-form .form-group .form-control::-ms-input-placeholder { color:rgba(0,0,0,0.4); }
+.signup-form .form-group p{ font-size:14px; line-height:16px; font-weight:700; color:#4A4A4A; margin:0; padding:0 0 12px; }
+.signup-form .form-group ul{ height:70px; border:1px solid rgba(0,0,0,0.2); border-radius:5px; padding:8px 10px; }
+.signup-form .form-group ul li{ font-size:14px; line-height:16px; font-weight:400; display:inline-block; padding:0 5px; }
+.signup-form .form-group ul li a{ display:inline-block; background:rgba(0,0,0,0.1); color:rgba(0,0,0,0.5); border-radius:30px; padding:5px 10px; } 
+.signup-form .form-group ul li a i{ font-size:12px; margin-left:15px; color:rgba(0,0,0,0.5); }
+.signup-form .form-group ul li a i:hover{ color:#fdaf0f; }
+.signup-form .sub-btn{ text-align:center; margin:0; padding:10px 0 0; }
+.signup-form .sub-btn .btn{ position:relative; font-size:18px; line-height:20px; font-weight:400; color:#fff; border:none; outline:none; background:#fb9f14 url(../images/arrow.png) no-repeat; background-size:20px; background-position:90% 50%; box-shadow:none; transition:all 0.5s; width:100%; height:50px; border-radius:8px; }
+.signup-form .sub-btn .btn:hover{ background-position:95% 50%; }
+.signup-form .col-lg-4 .form-group:after{ position:absolute; top:50%; right:12px; content:""; background:url(../images/down-arrow.png) no-repeat top center; width:8px; height:4px; }
+
+
+/*== testimonials Start ==*/
+.testimonials{ background:url(../images/testimonial-bg.png) no-repeat top center; background-size:cover; margin:0; padding:75px 0; }
+.testimonials .title{ text-align:center; margin:0; padding:0; }
+.testimonials .title h2{ font-family:'Georgia'; font-size:50px; line-height:52px; font-weight:bold; color:#000; margin:0; padding:0 0 24px; }
+.testimonials .title p{ width:60%; font-size:18px; line-height:28px; font-weight:400; color:#734200; margin:0 auto; padding:0 0 70px; }
+.testimonials .items{ display:flex; justify-content:space-between; margin:0; padding:0; }
+.testimonials .items .box-1{ position:relative; background:#fff; border-radius:15px; overflow:hidden; width:293px;  margin:0; padding:0; }
+.testimonials .items .box-1 .img-panel{ margin:0; padding:0; }
+.testimonials .items .box-1 .img-panel img{ width:100%; }
+.testimonials .items .box-1 .employe{ position:absolute; top:30px; left:25px; margin:0; padding:0; }
+.testimonials .items .box-1 .employe h3{ font-size:21px; line-height:23px; font-weight:700; text-transform:uppercase; color:#fff; margin:0; padding:0 0 5px; }
+.testimonials .items .box-1 .employe p{ font-size:11px; line-height:13px; font-weight:400; color:#fff; margin:0; padding:0; }
+.testimonials .items .box-1 .text-panel{ text-align:center; margin:0; padding:0 30px; }
+.testimonials .items .box-1 .text-panel .icon{ width:57px; height:57px; border-radius:50%; box-shadow:0 5px 12px 0 rgba(250,153,23,0.9); margin:-30px auto 20px; padding:0; }
+.testimonials .items .box-1 .text-panel .icon img{ width:100%; }
+.testimonials .items .box-1 .text-panel p{ font-size:16px; line-height:24px; font-weight:400; color:#000;  margin:0; padding:0; }
+.testimonials .items .box-2{ position:relative; background:#fff; box-shadow:0 0 8px 0 rgba(0,0,0,0.14); border-radius:15px; overflow:hidden; width:217px; margin:0; padding:30px 30px; }
+.testimonials .items .box-2::before { position:absolute; top:40px; left:25px; content:"\f10d"; font-size:28px; font-family:'Font Awesome\ 5 Free'; font-weight:900; color:#efefef; }
+.testimonials .items .text-panel{ padding:70px 0 0; }
+.testimonials .items .text-panel p{ font-size:16px; line-height:24px; font-weight:700; color:#000;  margin:0; padding:0 0 55px; }
+.testimonials .items .box-2 h3{ font-size:21px; line-height:23px; font-weight:700; text-transform:uppercase; color:#000; margin:0; padding:0 0 5px; }
+.testimonials .items .box-2 h4{ font-size:11px; line-height:13px; font-weight:400; color:#000; margin:0; padding:0; }
+.testimonials .items .box-3{ margin:0; padding:0; }
+.testimonials .items .box-3 .item{ position:relative; background:#fff; box-shadow:0 0 8px 0 rgba(0,0,0,0.14); border-radius:15px; overflow:hidden; width:550px; margin:0 0 30px; padding:25px 30px 25px 110px; }
+.testimonials .items .box-3 .item::before { position:absolute; top:25px; left:30px; content:"\f10d"; font-size:35px; font-family:'Font Awesome\ 5 Free'; font-weight:900; color:#efefef; }
+.testimonials .items .text-panel{ padding:70px 0 0; }
+.testimonials .items .box-3 .item p{ font-size:16px; line-height:24px; font-weight:400; color:#000;  margin:0; padding:0 0 25px; }
+.testimonials .items .box-3 .item .profile{ display:flex; align-items:center; margin:0; padding:0; }
+.testimonials .items .box-3 .item .profile .img-panel{ width:70px; height:70px; border-radius:50%; overflow:hidden; border:2px solid #fa9917; margin:0; padding:0; }
+.testimonials .items .box-3 .item .profile .img-panel img{ width:100%; height:100%; object-fit:cover; object-position:top; }
+.testimonials .items .box-3 .item .profile .text-panel{ margin:0; padding:0 0 0 20px; }
+.testimonials .items .box-3 .item h3{ font-size:21px; line-height:23px; font-weight:700; text-transform:uppercase; color:#fa9917; margin:0; padding:0 0 5px; }
+.testimonials .items .box-3 .item h4{ font-size:11px; line-height:13px; font-weight:400; color:rgba(0,0,0,0.5); margin:0; padding:0; }
+
+/*== Login-form Start ==*/
+.login-form{ margin:0; padding:0; }
+.login-form .inner-content{ background:url(../images/login-bg.jpg) no-repeat top center; background-size:cover; border-radius:15px; overflow:hidden; margin:0; padding:26px 26px 0; }
+.login-form .form-panel{ width:55%; background:#fff; border-radius:15px 15px 0 0; box-shadow:0 0 10px 0 rgba(0,0,0,0.18); margin:0 0 0 auto; padding:78px 100px; }
+.login-form .form-panel h3{ font-family:'Georgia'; font-size:30px; line-height:32px; font-weight:bold; color:#000; letter-spacing:-.46px; padding:0 0 78px; margin:0; }
+.login-form label{ font-size:14px; line-height:16px; font-weight:700; color:#4A4A4A; margin:0; padding:0 0 10px; }
+.login-form .form-group{ margin:0 0 18px; padding:0; }
+.login-form .form-group:nth-child(2){ margin:0 0 10px; }
+.login-form .form-group .form-control{ font-size:14px; line-height:16px; font-weight:400; color:#000; border:1px solid #E3E3E3; outline:none; box-shadow:none; background:none; border-radius:4px; height:40px; margin:0; padding:0 0 0 15px; }
+.login-form .form-group .form-control::placeholder { color:rgba(0,0,0,0.4); }
+.login-form .form-group .form-control:-ms-input-placeholder { color:rgba(0,0,0,0.4); }
+.login-form .form-group .form-control::-ms-input-placeholder {color:rgba(0,0,0,0.4); }
+.login-form .forget-pswrd{ text-align:right; margin:0; padding:0; }
+.login-form .forget-pswrd a{ font-size:14px; line-height:16px; font-weight:500; color:#FA9917; display:inline-block; margin:0; padding:0 0 30px; }
+.login-form .ctn-btn{ margin:0; padding:0 0 60px; }
+.login-form .ctn-btn .btn{ position:relative; font-size:16px; line-height:18px; font-weight:700; color:#fff; text-transform:uppercase; border:none; outline:none; background:#fb9f14 url(../images/arrow.png) no-repeat; background-size:18px; background-position:88% center; box-shadow:none; transition:all 0.5s; width:100%; height:50px; border-radius:10px; }
+.login-form .ctn-btn .btn:hover{ background-position:95% center; }
+.login-form .continue-block{ text-align:center; margin:0; padding:0; }
+.login-form .continue-block .text-panel{ margin:0; padding:0; }
+.login-form .continue-block .text-panel p{ position:relative; font-size:14px; line-height:16px; font-weight:400; color:#868686; margin:0 0 25px; padding:0; }
+.login-form .continue-block .text-panel p:before{ position:absolute; top:50%; left:0; content:""; width:125px; height:1px; background:#C8C8C8; }
+.login-form .continue-block .text-panel p:after{ position:absolute; top:50%; right:0; content:""; width:125px; height:1px; background:#C8C8C8; }
+.login-form .continue-block .social-panel{ margin:0; padding:0; }
+.login-form .continue-block .social-panel ul{ display:flex; flex-wrap:wrap; justify-content:center; }
+.login-form .continue-block .social-panel ul li{ padding:0 10px; }
+.login-form .continue-block .social-panel ul li a{ width:80px; height:60px; font-size:35px; color:#000; border-radius:20px; border:1px solid #E3E3E3; display:flex; align-items:center; justify-content:center; margin:0; padding:0; }
+.login-form .continue-block .social-panel ul li:nth-child(2) a{ color:#4167b1; }
+.login-form .continue-block .social-panel ul li a img{ max-width:100%; }
+
+
+
+
+/*== writer-block Start ==*/
+.writer-block{ margin:0; padding:0; }
+.writer-block .inner-content{ background:#343534; border-radius:15px; margin:0; padding:30px 35px; }
+.writer-block .title{ display:flex; align-items:center; flex-wrap:wrap; margin:0; padding:0 0 30px; }
+.writer-block .title a{ font-family:'Georgia'; font-size:30px; line-height:32px; font-weight:bold; color:#fff; letter-spacing:-.46px; display:inline-block; background:url(../images/arrow-2.png) left center; background-repeat:no-repeat; background-size:27px 20px; padding:0 0 0 43px; margin:0; }
+.writer-block .box{ background:#fff; border-radius:15px; margin:0 0 18px; padding:0; }
+
+.writer-block .box .job-title{ border-bottom: 2px solid #DDD; margin:0; padding:20px 30px; }
+.writer-block .box .job-title h3{ font-size:20px; line-height:22px; font-weight:700; color:#000; padding:0; margin:0; }
+.writer-block .box label{ font-size:14px; line-height:16px; font-weight:700; color:#4A4A4A; margin:0; padding:0 0 10px; }
+.writer-block .box .job-block{ padding:20px 30px 30px; }
+.writer-block .box .job-block .form-group{ margin:0 0 18px; padding:0; }
+.writer-block .box .job-block .form-group:nth-child(4){ margin:0 0 8px; }
+.writer-block .box .job-block .form-group .form-control{ font-size:14px; line-height:16px; font-weight:600; color:#000; border:1px solid #E3E3E3; outline:none; box-shadow:none; background:none; border-radius:4px; height:40px; margin:0; padding:0 15px; }
+.writer-block .box .job-block .form-group select.form-control{ width:28%; }
+.writer-block .box .job-block .form-group textarea.form-control{ resize:none; min-height:88px; padding:15px; }
+.writer-block .box .job-block .form-group .form-control::placeholder { color:rgba(0,0,0,0.4); }
+.writer-block .box .job-block .form-group .form-control:-ms-input-placeholder { color:rgba(0,0,0,0.4); }
+.writer-block .box .job-block .form-group .form-control::-ms-input-placeholder {color:rgba(0,0,0,0.4); }
+.writer-block .box .job-block .file-upload{ position:relative; margin:0; padding:0; }
+.writer-block .box .job-block .file-upload input{ opacity:0; }
+.writer-block .box .job-block .file-upload p{ position:absolute; top:0; left:0; font-size:13px; line-height:15px; font-weight:600; color:#595959; display:inline-block; background:#F3F3F3 url(../images/file-upload.png) 10% center; background-size:10px 16px; border-radius:30px; pointer-events:none; background-repeat:no-repeat; margin:0; padding:7px 17px 7px 36px; }
+.writer-block .box .job-block .file-upload h4{ font-size:12px; line-height:14px; font-weight:400; color:#8A8A8A; padding:0; margin:6px 0 0; }
+
+.writer-block .box-2{ padding:20px 30px; }
+.writer-block .box-2 .form-group .field-radio{ margin:0; padding:0; }
+.writer-block .box-2 .form-group .field-radio ul li{ display:inline-block; }
+.writer-block .box-2 .form-group .field-radio ul li input { display:none; }
+.writer-block .box-2 .form-group .field-radio ul li label { font-size:14px; line-height:16px; font-weight:600; color:#000; margin:0 12px 0 0; border:1px solid #E3E3E3; transition:all 0.5s; border-radius:4px; padding:10px 16px; cursor:pointer; }
+.writer-block .box-2 .form-group .field-radio ul li input:checked ~ label { border-color:transparent; background:#272828; color:#fff; }
+.writer-block .box-2 select.form-control{ width:23%; }
+
+.writer-block .box-3{ padding:20px 30px; }
+.writer-block .box-3 .btns{ margin:0; padding:0; }
+.writer-block .box-3 .btns ul li{ display:inline-block; padding:0 30px 0 0; }
+.writer-block .box-3 .btns ul li a{ font-size:16px; line-height:18px; font-weight:700; color:#4A4A4A; display:inline-block; transition:all 0.5s; margin:0; padding:0; }
+.writer-block .box-3 .btns ul li a:hover{ color:#fb9f14; }
+.writer-block .box-3 .btns ul li .btn { position:relative; font-size:16px; line-height:18px; font-weight:700; color:#fff; border:none; outline:none; background:#fb9f14 url(../images/arrow.png) no-repeat; background-size:18px; background-position:82% center; box-shadow:none; display:inline-block; transition:all 0.5s; height:50px; border-radius:10px; cursor:pointer; padding:0 85px 0 30px; margin:0; }
+.writer-block .box-3 .btns ul li .btn:hover { background-position:90% center; }
+.writer-block .box-3 label{ padding:0 0 15px }
+
+.writer-block .about-block{ position:relative; width:70%; background:#FFC16A; border-radius:15px; margin:0; padding:30px 35px; }
+.writer-block .about-block:after{ position:absolute; top:-16px; right:30px; content:""; background:url(../images/bookmark.png) no-repeat top center; width:64px; height:64px; }
+.writer-block .about-block .text-panel{ margin:0; padding:0 0 25px; }
+.writer-block .about-block .text-panel:last-child{ padding:0; }
+.writer-block .about-block .text-panel h2{ font-size:20px; line-height:22px; font-weight:700; color:#000; padding:0 0 15px; margin:0; }
+.writer-block .about-block .text-panel h3{ font-size:12px; line-height:14px; font-weight:600; color:#7D4800; padding:0 0 2px; margin:0; }
+.writer-block .about-block .text-panel ul{ padding:0 0 4px; }
+.writer-block .about-block .text-panel ul li{ font-size:14px; display:inline-block; padding:0 2px 0 0; }
+.writer-block .about-block .text-panel ul li i{ color:#272828; }
+.writer-block .about-block .text-panel p{ font-size:10px; line-height:15px; font-weight:600; color:#7D4800; padding:0; margin:0; }
+.writer-block .about-block .text-panel:last-child h2{ padding:0 0 8px; }
+.writer-block .about-block .text-panel p span{ display:block; }
+.writer-block .img-block{ width:438px; margin:-28px 0 0 8%; padding:0; }
+.writer-block .img-block img{ width:100%; margin:0; padding:0; }
+
+.writer-block .box .contract-block{ margin:0; padding:0; }
+.writer-block .box .contract-block .required-block { display:flex; align-items:center; flex-wrap:wrap; border-bottom:2px solid #DDD; margin:0; padding:18px 30px; }
+.writer-block .box .contract-block .required-block .img-panel { width:42px; height:42px; display:flex; align-items:center; justify-content:center; border-radius:5px; background:#FA9917; margin:0; padding:0; }
+.writer-block .box .contract-block .required-block .img-panel img { max-width:100%; }
+.writer-block .box .contract-block .required-block .text-panel { width:90%; margin:0; padding:0 0 0 16px; }
+.writer-block .box .contract-block .required-block .text-panel h3 { font-size:18px; line-height:20px; font-weight:400; color:#000; padding:0 0 8px; margin:0; }
+.writer-block .box .contract-block .required-block .text-panel p { font-size:11px; line-height:13px; font-weight:500; color:#939393; padding:0; margin:0; }
+.writer-block .box .contract-block .contract-details { margin:0; padding:20px 30px 40px; }
+.writer-block .box .contract-block .contract-details h3 { font-size:16px; line-height:18px; font-weight:700; border:0; color:#FA9917; padding:0 0 26px; margin:0; }
+.writer-block .box .contract-block .contract-details  h4 { font-size:11px; line-height:13px; font-weight:700; color:#000; padding:0 0 10px; margin:0; }
+.writer-block .box .contract-block .contract-details .field-radio { margin:0; padding:0 0 30px; }
+.writer-block .box .contract-block .contract-details .field-radio ul li { display:inline-block; padding-right:43px; }
+.writer-block .box .contract-block .contract-details .field-radio ul li span { display:block; font-size:11px; line-height:13px; font-weight:700; color:#000; padding:0 0 10px; margin:0; }
+.writer-block .box .contract-block .contract-details .field-radio ul li input { display:none; }
+.writer-block .box .contract-block .contract-details .field-radio ul li label { font-size:14px; line-height:16px; font-weight:700; color:#000; margin:0; border:1px solid #E3E3E3; background:#F7F7F7; transition:all 0.5s; border-radius:4px; padding:10px 18px; cursor:pointer; }
+.writer-block .box .contract-block .contract-details .field-radio ul li input:checked ~ label { border-color:transparent; background:#FA9917; color:#fff; }
+.writer-block .box .contract-block .contract-details .description { margin:0; padding:0; }
+.writer-block .box .contract-block .contract-details .description p { width:75%; font-size:11px; line-height:16px; font-weight:400; color:#7D7D7D; padding:0 0 32px; margin:0; }
+.writer-block .box .contract-block .contract-details .shared { margin:0; padding:0 0 30px; }
+.writer-block .box .contract-block .contract-details .shared h4 { padding:0 0 2px; }
+.writer-block .box .contract-block .contract-details .shared ul li a { font-size:12px; line-height:14px; font-weight:500; color:#FA9917; display:inline-block; padding:0; margin:0; }
+
+.writer-block .box .contract-block .contract-details .file-upload { margin:0; padding:0; }
+.writer-block .box .contract-block .contract-details .file-upload h4 { padding:0 0 15px; }
+.writer-block .box .contract-block .contract-details .file-upload .file{ position:relative; margin:0; padding:0; }
+.writer-block .box .contract-block .contract-details .file-upload .file input{ opacity:0; cursor:pointer; }
+.writer-block .box .contract-block .contract-details .file-upload .file p { position:absolute; top:0; left:0; font-size:13px; line-height:15px; font-weight:600; color:#595959; background:#F3F3F3 url(../images/file-upload.png) 8% center;
+    background-size: 10px 16px; background-repeat:no-repeat; display:inline-block; border-radius:30px; pointer-events:none; margin:0; padding:7px 17px 7px 36px; }
+
+.writer-block .box .contract-block .btns { margin:0; border-top:1px solid #DDD; padding:23px 30px; }
+.writer-block .box .contract-block .btns ul li { display:inline-block; padding:0 30px 0 0; }
+.writer-block .box .contract-block .btns ul li a { font-size:16px; line-height:18px; font-weight:700; color:#4A4A4A; display:inline-block; transition:all 0.5s; margin:0; padding:0; }
+.writer-block .box .contract-block .btns ul li:nth-child(2) a { position:relative; background:#fb9f14 url(../images/arrow.png) no-repeat; background-size:18px; background-position:75% center; box-shadow:none; border-radius:10px; color:#fff; padding:18px 75px 18px 30px; margin:0; }
+.writer-block .box .contract-block .btns ul li:nth-child(2) a:hover { background-position:80% center; }
+
+
+
+
+
+
+
+
+
+
+
+
